@@ -1,0 +1,14 @@
+<!-- header.ejs -->
+<header>
+    <div class="logo">
+        <img src="/images/logo.png" alt="Ivatuba Imóveis">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="/imoveis">Imóveis</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <!-- Adicione mais itens de menu conforme necessário -->
+        </ul>
+    </nav>
+</header>

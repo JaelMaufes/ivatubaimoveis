@@ -1,0 +1,54 @@
+<!-- index.ejs (Página Inicial) -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivatuba Imóveis</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Adicione mais metadados e links conforme necessário -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="Ivatuba Imóveis">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="/imoveis">Imóveis</a></li>
+                <li><a href="/contato">Contato</a></li>
+                <!-- Adicione mais itens de menu conforme necessário -->
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Bem-vindo a Ivatuba Imóveis</h1>
+        <p>Encontre as melhores propriedades na região!</p>
+
+        <!-- Formulário de Cadastro de Imóvel -->
+        <form action="/cadastrar-imovel" method="post" enctype="multipart/form-data">
+            <label for="tipo">Escolha o tipo:</label>
+            <select name="tipo" id="tipo">
+                <option value="aluguel">Aluguel</option>
+                <option value="venda">Venda</option>
+            </select>
+            <input type="text" name="nome" placeholder="Nome do Proprietário" required>
+            <input type="text" name="endereco" placeholder="Endereço do Imóvel" required>
+            <input type="number" name="valor" placeholder="Valor (R$)" required>
+            <input type="text" name="whatsapp" placeholder="WhatsApp" required>
+            <input type="email" name="email" placeholder="E-mail (opcional)">
+            <textarea name="descricao" placeholder="Descrição do Imóvel"></textarea>
+            <input type="file" name="imagens[]" accept="image/*" multiple>
+            <!-- Permite até 10 imagens -->
+            <button type="submit">Cadastrar Imóvel</button>
+        </form>
+
+        <!-- Mensagem de Retorno (aparecerá após o envio do formulário) -->
+        <p style="display: none;">Aguardando aprovação do cadastro.</p>
+    </div>
+    <footer>
+        <p>© 2024 Ivatuba Imóveis | Developed by Samuel Jafé</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<!-- footer.ejs -->
+<footer>
+    <p>© 2024 Ivatuba Imóveis | Developed by Samuel Jafé</p>
+    <ul>
+        <li><a href="/">Início</a></li>
+        <li><a href="/sobre">Sobre</a></li>
+        <!-- Adicione mais links conforme necessário -->
+    </ul>
+</footer>
